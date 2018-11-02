@@ -8,6 +8,6 @@ rules:
     message: |
       リテラルを直接書くのではなく `com.foobar.Constants` クラスに定義してある定数を使いましょう！
     pass:
-      - "foobar"
+      - "https://foobar.com/docs"
     fail:
-      - "Constants.FOO_BAR"
+      - "Constants.FOO_BAR_DOCS_URL"
