@@ -1,0 +1,13 @@
+rules:
+  - id: com.foobar.java.use-constants-class
+    pattern:
+      - literal: "https://foobar.com/docs"
+      - literal: "FooBar Web Site"
+    glob:
+      - "**/*.java"
+    message: |
+      リテラルを直接書くのではなく `com.foobar.Constants` クラスに定義してある定数を使いましょう！
+    pass:
+      - "https://foobar.com/docs"
+    fail:
+      - "Constants.FOO_BAR_DOCS_URL"
